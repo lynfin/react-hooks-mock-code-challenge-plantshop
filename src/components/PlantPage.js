@@ -12,7 +12,7 @@ function PlantPage() {
       .then((plants) => setPlants(plants));
   }, []);
 
-  const handleNewPlant = (plant) => {
+  const handleNewPlant = (newPlant) => {
     setPlants([...plants, newPlant]);
   };
 
