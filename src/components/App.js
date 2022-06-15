@@ -1,8 +1,15 @@
 import React from "react";
 import Header from "./Header";
 import PlantPage from "./PlantPage";
-
 function App() {
+  // ┌ ─ ├ └ │
+  // App
+  //  ├ Header
+  //  └ PlantPage [plants]
+  //     ├ NewPlantForm
+  //     ├ Search
+  //     └ PlantList
+  //         └ PlantCard
   return (
     <div className="app">
       <Header />
