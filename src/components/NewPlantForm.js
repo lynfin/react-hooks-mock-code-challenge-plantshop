@@ -25,7 +25,7 @@ function NewPlantForm({ handleNewPlant }) {
       body: JSON.stringify(formData),
     })
       .then((r) => r.json())
-      .then((savedPlant) => console.log("Saved", savedPlant));
+      .then((savedPlant) => handleNewPlant(savedPlant));
   };
   return (
     <div className="new-plant-form">
