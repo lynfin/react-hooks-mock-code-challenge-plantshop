@@ -25,11 +25,20 @@ function PlantPage() {
     setSearchString(newSearch);
   };
   console.log("search string:", searchString);
+  // const filteredPlantList = plants.filter((plant) =>
+  //   plant.name.includes(searchString)
+  // );
+  // const filteredPlantsList = plants.filter(
+  //   (plant) => plant.name === searchString
+  // );
+  const filteredPlantsList = plants;
+
+  console.log("filtered list", filteredPlantsList.length);
   return (
     <main>
       <NewPlantForm onNewPlant={handleNewPlant} />
       <Search searchString={searchString} onNewSearch={handleNewSearch} />
-      <PlantList plants={plants} />
+      <PlantList plants={filteredPlantsList} />
     </main>
   );
 }

@@ -1,8 +1,9 @@
 import React, { useState } from "react";
-const handleChange = (e) => {
-  onNewSearch(e.target.value);
-};
 function Search({ searchString, onNewSearch }) {
+  const handleChange = (e) => {
+    onNewSearch(e.target.value);
+  };
+
   return (
     <div className="searchbar">
       <label htmlFor="search">Search Plants:</label>
