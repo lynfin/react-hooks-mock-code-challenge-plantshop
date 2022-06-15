@@ -9,7 +9,7 @@ function App() {
   //     ├ NewPlantForm
   //     ├ Search
   //     └ PlantList
-  //         └ PlantCard
+  //         └ PlantCard [isInStock]
   return (
     <div className="app">
       <Header />
