@@ -11,13 +11,17 @@ function NewPlantForm({ handleNewPlant }) {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    console.log(`${name} changed to ${value}`);
+    setFormData({ ...formData, [name]: value });
   };
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log("Submit with", formData);
+  };
   return (
     <div className="new-plant-form">
       <h2>New Plant</h2>
-      <form>
+      <form onSubmit={handleSubmit}>
         <input
           type="text"
           name="name"
