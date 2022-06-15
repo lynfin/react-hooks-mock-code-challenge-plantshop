@@ -5,7 +5,7 @@ const noPlant = {
   price: 0,
 };
 //./images/calathea.jpg
-function NewPlantForm({ handleNewPlant }) {
+function NewPlantForm({ onNewPlant }) {
   const [formData, setFormData] = useState(noPlant);
   const { name, image, price } = formData;
 
@@ -25,7 +25,7 @@ function NewPlantForm({ handleNewPlant }) {
       body: JSON.stringify(formData),
     })
       .then((r) => r.json())
-      .then((savedPlant) => handleNewPlant(savedPlant));
+      .then((savedPlant) => onNewPlant(savedPlant));
   };
   return (
     <div className="new-plant-form">

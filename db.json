@@ -50,6 +50,12 @@
       "image": "sdf",
       "price": "6",
       "id": 9
+    },
+    {
+      "name": "Calathea",
+      "image": "./images/calathea.jpg",
+      "price": "10.00",
+      "id": 10
     }
   ]
 }
