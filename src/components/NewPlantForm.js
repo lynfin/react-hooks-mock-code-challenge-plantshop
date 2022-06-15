@@ -4,7 +4,7 @@ const noPlant = {
   image: "",
   price: 0,
 };
-
+//./images/calathea.jpg
 function NewPlantForm({ handleNewPlant }) {
   const [formData, setFormData] = useState(noPlant);
   const { name, image, price } = formData;
@@ -16,7 +16,16 @@ function NewPlantForm({ handleNewPlant }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("Submit with", formData);
+
+    fetch("http://localhost:6001/plants", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formData),
+    })
+      .then((r) => r.json())
+      .then((savedPlant) => console.log("Saved", savedPlant));
   };
   return (
     <div className="new-plant-form">
