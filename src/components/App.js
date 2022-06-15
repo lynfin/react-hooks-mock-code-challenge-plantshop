@@ -5,7 +5,7 @@ function App() {
   // ┌ ─ ├ └ │
   // App
   //  ├ Header
-  //  └ PlantPage [plants]
+  //  └ PlantPage [plants, searchString]
   //     ├ NewPlantForm
   //     ├ Search
   //     └ PlantList
