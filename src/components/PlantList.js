@@ -5,7 +5,7 @@ function PlantList({ plants }) {
   return (
     <ul className="cards">
       {plants.map((plant) => (
-        <PlantCard plant={plant} />
+        <PlantCard plant={plant} key={plant.id} />
       ))}
     </ul>
   );

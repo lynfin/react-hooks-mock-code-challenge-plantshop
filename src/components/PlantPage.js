@@ -11,9 +11,14 @@ function PlantPage() {
       .then((r) => r.json())
       .then((plants) => setPlants(plants));
   }, []);
+
+  const handleNewPlant = (plant) => {
+    setPlants([...plants, newPlant]);
+  };
+
   return (
     <main>
-      <NewPlantForm />
+      <NewPlantForm onNewPlant={handleNewPlant} />
       <Search />
       <PlantList plants={plants} />
     </main>

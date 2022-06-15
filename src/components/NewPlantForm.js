@@ -1,6 +1,6 @@
 import React from "react";
 
-function NewPlantForm() {
+function NewPlantForm({ handleNewPlant }) {
   return (
     <div className="new-plant-form">
       <h2>New Plant</h2>
