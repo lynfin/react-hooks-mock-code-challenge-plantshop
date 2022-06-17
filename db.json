@@ -41,6 +41,18 @@
       "name": "Fiddle Leaf Fig",
       "image": "./images/fiddle-leaf-fig.jpg",
       "price": 55
+    },
+    {
+      "name": "Grass",
+      "image": "https://forum.grasscity.com/attachments/image-jpeg.2479970/",
+      "price": 100,
+      "id": 8
+    },
+    {
+      "name": "Desert plant",
+      "image": "https://longwoodgardens.org/sites/default/files/highlight_images/58220.jpg",
+      "price": 27.54,
+      "id": 9
     }
   ]
 }
